@@ -6,7 +6,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ConsultaMoneda {
-    String apiKey = "a0f61c9cb188743d95ec09e1";
+    String apiKey = "YOUR APIKEY";
 
     public Moneda buscaMoneda (String baseCode, String targetCode, double monto) {
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/" + baseCode + "/" + targetCode + "/" + monto);
